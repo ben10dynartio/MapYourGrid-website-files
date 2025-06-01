@@ -9,7 +9,7 @@ import requests
 
 COUNTRY_PAGE_TEMPLATE = "country_page_template.md"
 DOCS_FOLDER_PATH = "../../docs/"
-PROGRESS_PAGE_PATH = DOCS_FOLDER_PATH + "progress.md"
+PROGRESS_PAGE_PATH = "progress.md"
 
 
 DESTINATION_DIRECTORY = Path(__file__).parent.parent.parent / "docs/countrypages"
