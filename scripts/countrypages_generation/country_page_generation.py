@@ -10,6 +10,7 @@ import requests
 COUNTRY_PAGE_TEMPLATE = "country_page_template.md"
 DOCS_FOLDER_PATH = "../../docs/"
 PROGRESS_PAGE_PATH = "progress.md"
+COUNTRY_LIST_PATH = "countrylist.md"
 
 
 DESTINATION_DIRECTORY = Path(__file__).parent.parent.parent / "docs/countrypages"
@@ -151,6 +152,9 @@ r = requests.get('https://raw.githubusercontent.com/open-energy-transition/Oh-my
 newfile = r.text.replace("<!-- COUNTRY_LIST_INSERTION -->", mystr)
 with open(PROGRESS_PAGE_PATH,'w') as f:
     f.write(newfile)
+
+with open(COUNTRY_LIST_PATH,'w') as f:
+    f.write(mystr)
 
 
 # Exemple d'utilisation
