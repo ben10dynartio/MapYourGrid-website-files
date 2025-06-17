@@ -82,7 +82,7 @@ def main():
 
         <center>![Map](../images/maps_countries/{{COUNTRY_CODE}}/high-voltage-network.jpg){width=60%}
         ![Map](../images/maps_countries_legend_progress.jpg){width=50%}</center>
-        """
+        """.replace("        ", "")
 
     SECTION_GRID_CONNECTIVITY = """
         ## Grid connectivity overview
@@ -91,7 +91,7 @@ def main():
 
         <center>![Map](../images/maps_countries/{{COUNTRY_CODE}}/grid-connectivity.jpg){width=60%}
         ![Map](../images/maps_countries_legend_grid.jpg){width=50%}</center>
-        """
+        """.replace("        ", "")
 
     ## Building MD file &
 
