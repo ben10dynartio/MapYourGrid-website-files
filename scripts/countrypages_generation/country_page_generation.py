@@ -80,8 +80,10 @@ def main():
     SECTION_PROGRESS_MAP = """
         ## Progress map
 
-        <center>![Map](../images/maps_countries/{{COUNTRY_CODE}}/high-voltage-network.jpg){width=60%}
-        ![Map](../images/maps_countries_legend_progress.jpg){width=50%}</center>
+        <center>
+        ![Map](../images/maps_countries/{{COUNTRY_CODE}}/high-voltage-network.jpg){width=60%}
+        ![Map](../images/maps_countries_legend_progress.jpg){width=50%}
+        </center>
         """.replace("        ", "")
 
     SECTION_GRID_CONNECTIVITY = """
@@ -89,8 +91,10 @@ def main():
 
         Grid connectivity summary (nb of substations x nb of connections) :<br>{{POWER_GRID_CONNECTIVITY}}
 
-        <center>![Map](../images/maps_countries/{{COUNTRY_CODE}}/grid-connectivity.jpg){width=60%}
-        ![Map](../images/maps_countries_legend_grid.jpg){width=50%}</center>
+        <center>
+        ![Map](../images/maps_countries/{{COUNTRY_CODE}}/grid-connectivity.jpg){width=60%}
+        ![Map](../images/maps_countries_legend_grid.jpg){width=50%}
+        </center>
         """.replace("        ", "")
 
     ## Building MD file &

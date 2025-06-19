@@ -35,6 +35,8 @@ Each new realease contains a `docs.zip` which is a docs folder that have to be m
 * Run `gather_country_stats.py`
 * Get all export folder, push them in docs/maps_countries/
 * Get `powergrid_analysis_countries_info.csv` and paste it in `scripts/countrypage_generation/`
+* Draft new release : Add `docs.zip`as binary file, publish rel
+
 
 ## Technical notes
 

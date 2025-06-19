@@ -1,24 +1,11 @@
 <div class="page-headers">
-<h1>Our Progress and Country Logbook ↗ </h1>
+<h1>Our Progress and Country Logbook </h1>
 </div>
 
-Welcome to our team's progress page, where you can see our mapping progress in many different countries.
-
-:question: If you want more detailed information about each country, visit the OSM wiki page about [power networks](https://wiki.openstreetmap.org/wiki/Power_networks).
-
-If you want to join our community, join our OSM [team](https://mapping.team/teams/1570/invitations/eec8b5f8-b212-4013-8707-96245f300fa1), and use our hashtag **#ohmygrid**!
-<br>
-
-Here are some [heatmaps](https://yosmhm.neis-one.org/) of the mapping work some of our team has done:
-<div class="heatmap-container">
-  <img src="../images/progress-page/heatmapAHD.jpg" class="img-border" width="300">
-  <img src="../images/progress-page/heatmapMWI.jpg" class="img-border" width="300">
-  <img src="../images/progress-page/heatmapTA1.jpg" class="img-border" width="300">
-</div>
-
+OhMyGrid measures its progress at user, hashtag and country level. If you use our tools and training courses, we would be honored if you support our KPI. Just use the #OhMyGrid hashtag in your changesets or add your user id to our [KPI script](https://github.com/open-energy-transition/OhMyGrid/blob/main/.github/workflows/update-tower-count.yml).
 
 <!-- Progress Bars Section -->
-## **<div class="tools-header">Community mapping progress :rocket:</div>**
+## **<div class="tools-header">Community Mapping Progress </div>**
 
 <div class="progress-section"> 
    <button id="refresh-btn" style="margin-bottom:1rem;">
@@ -35,14 +22,14 @@ Here are some [heatmaps](https://yosmhm.neis-one.org/) of the mapping work some 
   <div class="progress-item">
     <label>Total Edits for <code>#ohmygrid</code>:</label>
     <div class="progress">
-      <div class="progress-bar" id="edits-bar" style="background-color: #17a2b8;"></div> </div>
+      <div class="progress-bar" id="edits-bar" style="background-color: #28a745;"></div> </div>
     <span id="edits-count">Loading…</span>
   </div>
 
   <div class="progress-item">
     <label>Towers mapped by our team:</label>
     <div class="progress">
-      <div class="progress-bar" id="tower-bar"></div>
+      <div class="progress-bar" id="tower-bar" style="background-color: #17a2b8;"></div>
     </div>
     <span id="tower-count">Loading…</span>
     <br>
@@ -52,7 +39,7 @@ Here are some [heatmaps](https://yosmhm.neis-one.org/) of the mapping work some 
   <div class="progress-item">
     <label>Total estimated power line length added by our team (in km):</label>
     <div class="progress">
-      <div class="progress-bar" id="line-length-bar" style="background-color: #ffc107;"></div>
+      <div class="progress-bar" id="line-length-bar" style="background-color: #17a2b8;"></div>
     </div>
     <span id="line-length-count">Loading…</span><br>
     <span id="line-length-updated" style="font-size:0.8em; color:#666">
@@ -152,9 +139,18 @@ async function loadLineLength() {
   try {
     const resp = await fetch('/data/line-length.json');
     if (!resp.ok) throw new Error(resp.statusText);
-    const { lengthKm, updated } = await resp.json();
+    const data = await resp.json();
+    const { lengthKm, mediumHighVoltageKm, percentageOfMediumHigh, updated } = data;
 
-    lengthEl.textContent = Math.round(lengthKm).toLocaleString() + ' km';
+    // Always show the length, even if percentage calculation failed
+    let displayText = `${Math.round(lengthKm).toLocaleString()} km`;
+
+   // Only add percentage if we have valid data
+    if (percentageOfMediumHigh !== null && percentageOfMediumHigh !== undefined && mediumHighVoltageKm) {
+      displayText += `<br><small style="color: #666; font-size: 0.85em;">${percentageOfMediumHigh}% of all high-voltage lines in OpenStreetMap (source: openinframap.org)</small>`;
+    }
+    
+    lengthEl.innerHTML = displayText;
     lengthBar.style.width  = Math.min(100, lengthKm / LINE_LENGTH_GOAL * 100) + '%';
     updatedEl.textContent  = `Last updated: ${new Date(updated).toLocaleString()}`;
   } catch(err) {
