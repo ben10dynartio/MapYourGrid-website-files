@@ -1,5 +1,6 @@
 # content to handle through release file, not included
-docs/
+docs/countrypages/
+docs/images/maps_countries/
 docs.zip
 
 # Byte-compiled / optimized / DLL files
