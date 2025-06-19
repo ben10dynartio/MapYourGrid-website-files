@@ -15,13 +15,15 @@ docs
 |   |-- Zimbabwe.md
 |-- images
 |   |-- maps_countries
-|       |-- AE
-|       |   |-- grid-connectivity.png
-|       |   |-- high-voltage-network.png
-|       |-- ...
-|       |-- ZW
-|           |-- grid-connectivity.png
-|           |-- high-voltage-network.png
+|   |   |-- AE
+|   |   |   |-- grid-connectivity.png
+|   |   |   |-- high-voltage-network.png
+|   |   |-- ...
+|   |   |-- ZW
+|   |       |-- grid-connectivity.png
+|   |       |-- high-voltage-network.png
+|   |-- maps_countries_legend_grid.jpg
+|   |-- maps_countries_legend_progress.jpg
 |-- progress.md
 ```
 
