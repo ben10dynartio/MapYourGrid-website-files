@@ -81,7 +81,7 @@ def main():
         ## Progress map
 
         <center>
-        ![Map](../images/maps_countries/{{COUNTRY_CODE}}/high-voltage-network.jpg){width=60%}
+        ![Map](https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/{{COUNTRY_CODE}}/high-voltage-network.jpg){width=60%}
         ![Map](../images/maps_countries_legend_progress.jpg){width=50%}
         </center>
         """.replace("        ", "")
@@ -92,7 +92,7 @@ def main():
         Grid connectivity summary (nb of substations x nb of connections) :<br>{{POWER_GRID_CONNECTIVITY}}
 
         <center>
-        ![Map](../images/maps_countries/{{COUNTRY_CODE}}/grid-connectivity.jpg){width=60%}
+        ![Map](https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/{{COUNTRY_CODE}}/grid-connectivity.jpg){width=60%}
         ![Map](../images/maps_countries_legend_grid.jpg){width=50%}
         </center>
         """.replace("        ", "")
@@ -184,7 +184,7 @@ def zip_folder(folder_path, output_path=None):
         raise ValueError(f"Le dossier spécifié n'existe pas : {folder_path}")
 
     if output_path is None:
-        output_path = Path(__file__).parent.parent.parent / ("zips/" + folder_path.parent.name + ".zip")
+        output_path = Path(__file__).parent.parent.parent / ("zips/" + folder_path.name + ".zip")
 
     with zipfile.ZipFile(output_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, _, files in os.walk(folder_path):
