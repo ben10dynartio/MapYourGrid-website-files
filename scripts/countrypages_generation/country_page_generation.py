@@ -175,7 +175,8 @@ def main():
     with open(COUNTRY_LIST_PATH, 'w') as f:
         f.write(mystr)
 
-    zip_folder(DOCS_FOLDER_PATH)
+    zip_folder(DESTINATION_DIRECTORY)
+    zip_folder(MAPS_IMAGES_DIRECTORY)
 
 
 def zip_folder(folder_path, output_path=None):
@@ -183,7 +184,7 @@ def zip_folder(folder_path, output_path=None):
         raise ValueError(f"Le dossier spécifié n'existe pas : {folder_path}")
 
     if output_path is None:
-        output_path = folder_path.rstrip(os.sep) + ".zip"
+        output_path = Path(__file__).parent.parent.parent / ("zips/" + folder_path.parent.name + ".zip")
 
     with zipfile.ZipFile(output_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, _, files in os.walk(folder_path):

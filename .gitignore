@@ -1,7 +1,8 @@
 # content to handle through release file, not included
-docs/countrypages/
-docs/images/maps_countries/
+#docs/countrypages/
+#docs/images/maps_countries/
 docs.zip
+zips/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
