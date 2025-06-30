@@ -81,8 +81,11 @@ def main():
         ## Progress map
 
         <center>
+        
         ![Map](https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/{{COUNTRY_CODE}}/high-voltage-network.jpg){width=60%}
+        
         ![Map](../images/maps_countries_legend_progress.jpg){width=50%}
+        
         </center>
         """.replace("        ", "")
 
@@ -92,8 +95,11 @@ def main():
         Grid connectivity summary (nb of substations x nb of connections) :<br>{{POWER_GRID_CONNECTIVITY}}
 
         <center>
+        
         ![Map](https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/{{COUNTRY_CODE}}/grid-connectivity.jpg){width=60%}
+        
         ![Map](../images/maps_countries_legend_grid.jpg){width=50%}
+        
         </center>
         """.replace("        ", "")
 
