@@ -1,4 +1,4 @@
-# Serve map files for #ohmygrid website
+# Serve map files for #MapYourGrid website
 
 ## Information
 
