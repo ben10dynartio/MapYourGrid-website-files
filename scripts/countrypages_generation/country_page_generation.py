@@ -34,14 +34,17 @@ def main():
     """ Following lines extract the country list per continent. You can use one of the following dict as a country list"""
     extract_dict = {idx: df_wikidata.loc[idx].get("name")
                     for idx in df_wikidata.index if df_wikidata.loc[idx].get("continent") == "Oceania"}
-    """for row in df_wikidata.to_dict(orient='records'):
-        print(row)
-        if row["continent"]=="North America":
-            try:
-                extract_dict[row["codeiso2"]] = row["name"]
-            except KeyError:
-                raise KeyError("Key not found in :" + str(row))"""
     print(extract_dict)
+
+    extract_dict = {idx: df_wikidata.loc[idx].get("name")
+                    for idx in df_wikidata.index if df_wikidata.loc[idx].get("continent") == "North America"}
+    print(extract_dict)
+
+    extract_dict = {idx: df_wikidata.loc[idx].get("name")
+                    for idx in df_wikidata.index if df_wikidata.loc[idx].get("continent") == "Europe"}
+    print(extract_dict)
+
+
     Africa = {'AO': 'Angola', 'BF': 'Burkina Faso', 'BI': 'Burundi', 'BJ': 'Benin', 'BW': 'Botswana',
               'CD': 'Democratic Republic of the Congo', 'CF': 'Central African Republic', 'CG': 'Republic of the Congo',
               'CI': 'Ivory Coast', 'CM': 'Cameroon', 'CV': 'Cape Verde', 'DJ': 'Djibouti', 'DZ': 'Algeria',
@@ -75,7 +78,7 @@ def main():
     # COUNTRY_LIST = {'DK': 'Danish'}
     COUNTRY_LIST = {idx: df_wikidata.loc[idx].get("name") for idx in df_wikidata.index}
     SKIP_UNTIL = None  # not in use yet
-
+    exit(0)
     # The following section are conditional, only for countries with map
     SECTION_PROGRESS_MAP = """
         ## Progress map
