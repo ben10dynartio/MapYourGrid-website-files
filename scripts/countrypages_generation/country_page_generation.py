@@ -78,7 +78,7 @@ def main():
     # COUNTRY_LIST = {'DK': 'Danish'}
     COUNTRY_LIST = {idx: df_wikidata.loc[idx].get("name") for idx in df_wikidata.index}
     SKIP_UNTIL = None  # not in use yet
-    exit(0)
+
     # The following section are conditional, only for countries with map
     SECTION_PROGRESS_MAP = """
         ## Progress map
@@ -148,6 +148,7 @@ def main():
         # Export all md files for countries
         Path.mkdir(DESTINATION_DIRECTORY, exist_ok=True)
         with open(DESTINATION_DIRECTORY / f"{template_data['COUNTRY_NAME']}.md", 'w', encoding='utf-8') as f:
+            print("+", end="")
             f.write(contenu)
 
         df_collector.append(template_data)
@@ -169,11 +170,11 @@ def main():
         mystr += "\n"
         # print("\n")
 
-    r = requests.get(
+    """r = requests.get(
         'https://raw.githubusercontent.com/open-energy-transition/Oh-my-Grid/refs/heads/main/docs/progress.md')
     newfile = r.text.replace("<!-- COUNTRY_LIST_INSERTION -->", mystr)
     with open(PROGRESS_PAGE_PATH, 'w') as f:
-        f.write(newfile)
+        f.write(newfile)"""
 
     with open(COUNTRY_LIST_PATH, 'w') as f:
         f.write(mystr)

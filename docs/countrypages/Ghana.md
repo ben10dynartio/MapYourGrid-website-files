@@ -22,7 +22,7 @@ Power line length:<br>
 International connections:<br>
 </div>
 <div style="display: inline-block;">5043 MW<br>
-27<br>
+28<br>
 97<br>
 5572 km<br>
 7<br>
@@ -50,7 +50,7 @@ International connections:<br>
 
 ## Grid connectivity overview
 
-Grid connectivity summary (nb of substations x nb of connections) :<br>53x186 + 1x1
+Grid connectivity summary (nb of substations x nb of connections) :<br>53x188 + 2x1 + 1x1
 
 <center>
 <img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/GH/grid-connectivity.jpg" width="60%">

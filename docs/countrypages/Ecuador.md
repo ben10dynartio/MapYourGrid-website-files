@@ -23,8 +23,8 @@ International connections:<br>
 </div>
 <div style="display: inline-block;">5644 MW<br>
 85<br>
-620<br>
-8379 km<br>
+624<br>
+8457 km<br>
 4<br>
 </div>
 
@@ -50,7 +50,7 @@ International connections:<br>
 
 ## Grid connectivity overview
 
-Grid connectivity summary (nb of substations x nb of connections) :<br>79x91 + 44x57 + 12x11 + 6x6 + 6x6 + 5x4 + 5x4 + 4x3 + 3x2 + 3x2 + 3x2 + 3x2 + 3x2 + 2x2 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1
+Grid connectivity summary (nb of substations x nb of connections) :<br>125x166 + 12x11 + 2*(6x6) + 2*(5x4) + 4x3 + 5*(3x2) + 2x2 + 18*(2x1)
 
 <center>
 <img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/EC/grid-connectivity.jpg" width="60%">

@@ -22,7 +22,7 @@ Power line length:<br>
 International connections:<br>
 </div>
 <div style="display: inline-block;">818 MW<br>
-22<br>
+24<br>
 16<br>
 1293 km<br>
 3<br>

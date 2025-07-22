@@ -22,10 +22,10 @@ Power line length:<br>
 International connections:<br>
 </div>
 <div style="display: inline-block;">37402 MW<br>
-172<br>
-<br>
-15431 km<br>
-<br>
+181<br>
+4068<br>
+15430 km<br>
+3<br>
 </div>
 
 <br><br><h4>See also :
@@ -39,5 +39,21 @@ International connections:<br>
 </table>
 
 
+## Progress map
 
+<center>
+<img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/MY/high-voltage-network.jpg" width="60%">
+<img src="../../images/maps_countries_legend_progress.jpg" width="50%">
+</center>
+
+
+
+## Grid connectivity overview
+
+Grid connectivity summary (nb of substations x nb of connections) :<br>382x740 + 46x54 + 44x59 + 3x3 + 3*(3x2) + 3*(2x1) + 1x2 + 2*(1x1)
+
+<center>
+<img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/MY/grid-connectivity.jpg" width="60%">
+<img src="../../images/maps_countries_legend_grid.jpg" width="50%">
+</center>
 

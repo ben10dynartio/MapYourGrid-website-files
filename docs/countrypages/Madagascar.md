@@ -50,7 +50,7 @@ International connections:<br>
 
 ## Grid connectivity overview
 
-Grid connectivity summary (nb of substations x nb of connections) :<br>4x3
+Grid connectivity summary (nb of substations x nb of connections) :<br>5x4 + 2x1
 
 <center>
 <img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/MG/grid-connectivity.jpg" width="60%">

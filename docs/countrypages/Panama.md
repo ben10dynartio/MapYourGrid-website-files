@@ -22,7 +22,7 @@ Power line length:<br>
 International connections:<br>
 </div>
 <div style="display: inline-block;">3421 MW<br>
-86<br>
+87<br>
 78<br>
 2143 km<br>
 4<br>
@@ -50,7 +50,7 @@ International connections:<br>
 
 ## Grid connectivity overview
 
-Grid connectivity summary (nb of substations x nb of connections) :<br>48x76 + 2x1 + 2x1
+Grid connectivity summary (nb of substations x nb of connections) :<br>48x77 + 2*(2x1)
 
 <center>
 <img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/PA/grid-connectivity.jpg" width="60%">

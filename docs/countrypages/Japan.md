@@ -21,11 +21,11 @@ Number of substations:<br>
 Power line length:<br>
 International connections:<br>
 </div>
-<div style="display: inline-block;">220065 MW<br>
-13733<br>
-<br>
-74123 km<br>
-<br>
+<div style="display: inline-block;">220216 MW<br>
+14199<br>
+5810<br>
+74332 km<br>
+0<br>
 </div>
 
 <br><br><h4>See also :
@@ -39,5 +39,21 @@ International connections:<br>
 </table>
 
 
+## Progress map
 
+<center>
+<img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/JP/high-voltage-network.jpg" width="60%">
+<img src="../../images/maps_countries_legend_progress.jpg" width="50%">
+</center>
+
+
+
+## Grid connectivity overview
+
+Grid connectivity summary (nb of substations x nb of connections) :<br>2866x6642 + 29x45 + 11x23 + 10x15 + 9x18 + 9x15 + 9x12 + 8x17 + 8x13 + 7x12 + 6x6 + 2*(6x5) + 5x11 + 5x10 + 2*(5x6) + 5x5 + 5x4 + 4x12 + 4x6 + 2*(4x5) + 3*(4x4) + 2*(4x3) + 3x6 + 3x5 + 4*(3x4) + 5*(3x3) + 13*(3x2) + 2x7 + 2*(2x4) + 2*(2x3) + 15*(2x2) + 83*(2x1) + 1x9 + 1x6 + 1x5 + 2*(1x4) + 2*(1x3) + 10*(1x2) + 40*(1x1)
+
+<center>
+<img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/JP/grid-connectivity.jpg" width="60%">
+<img src="../../images/maps_countries_legend_grid.jpg" width="50%">
+</center>
 

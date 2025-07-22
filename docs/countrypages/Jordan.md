@@ -24,7 +24,7 @@ International connections:<br>
 <div style="display: inline-block;">6084 MW<br>
 105<br>
 68<br>
-2673 km<br>
+2692 km<br>
 3<br>
 </div>
 
@@ -50,7 +50,7 @@ International connections:<br>
 
 ## Grid connectivity overview
 
-Grid connectivity summary (nb of substations x nb of connections) :<br>52x97 + 1x1
+Grid connectivity summary (nb of substations x nb of connections) :<br>52x98 + 1x1
 
 <center>
 <img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/JO/grid-connectivity.jpg" width="60%">

@@ -21,10 +21,10 @@ Number of substations:<br>
 Power line length:<br>
 International connections:<br>
 </div>
-<div style="display: inline-block;">2118 MW<br>
-70<br>
-263<br>
-14831 km<br>
+<div style="display: inline-block;">2128 MW<br>
+71<br>
+292<br>
+16139 km<br>
 6<br>
 </div>
 
@@ -50,7 +50,7 @@ International connections:<br>
 
 ## Grid connectivity overview
 
-Grid connectivity summary (nb of substations x nb of connections) :<br>134x177 + 5x4 + 3x3 + 3x2 + 3x2 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 2x1 + 1x1 + 1x1 + 1x1
+Grid connectivity summary (nb of substations x nb of connections) :<br>170x215 + 4x4 + 2*(3x2) + 8*(2x1) + 1x2 + 3*(1x1)
 
 <center>
 <img src="https://raw.githubusercontent.com/ben10dynartio/ohmygrid-website-files/refs/heads/main/docs/images/maps_countries/MN/grid-connectivity.jpg" width="60%">

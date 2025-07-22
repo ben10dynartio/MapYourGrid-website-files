@@ -24,7 +24,7 @@ International connections:<br>
 <div style="display: inline-block;">12729 MW<br>
 18<br>
 177<br>
-1805 km<br>
+1857 km<br>
 1<br>
 </div>
 
